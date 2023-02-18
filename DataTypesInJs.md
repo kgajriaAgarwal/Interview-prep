@@ -52,4 +52,4 @@ mutable
 
 - When the value is changed, it is stored in a new address in memory and the previous memory address is automatically freed(deleted) by a memory manager called garbage collector in javascript.
 
-![ datatypes](./Assets/Capturedt.png "Text to show on mouseover")
+[text](https://scaler.com/topics/images/example-of-immutable-objects-in-js.webp)
