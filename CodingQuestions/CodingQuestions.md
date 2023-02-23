@@ -7,8 +7,8 @@ output: { i: 3, n: 2, d: 1, ..etc } */
 
 
 function charOccourances(str){
-	const newStr = str.toLowerCase();
-	const strArr = newStr.split("");
+  const newStr = str.toLowerCase();
+  const strArr = newStr.split("");
   console.log("strArr:", strArr);
   const res = strArr.reduce((acc, cval)=>{
   	if(!acc[cval]){
