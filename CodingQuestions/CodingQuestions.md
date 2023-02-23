@@ -23,8 +23,6 @@ function charOccourances(str){
 
 console.log("charOccourances:", charOccourances('React has a powerful composition model, and we recommend using it.'));
 ```
-<<<<<<< HEAD
-=======
 
 
 ________________________________________________________
@@ -60,4 +58,3 @@ export default function App() {
   );
 }
 ```
->>>>>>> 2e36761 (js)
