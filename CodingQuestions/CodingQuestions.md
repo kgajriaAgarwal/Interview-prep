@@ -27,6 +27,21 @@ console.log("charOccourances:", charOccourances('React has a powerful compositio
 
 ________________________________________________________
 
+Remove duplicates
+var arr = [{id:1,name:"abc"},
+						{id:2, name:"xyz"}, 
+            {id:4, name:"pqr"}, 
+            {id:4, name:"lms"}, 
+            {id:5, name: "kkk"},
+             {id:6, name:"pqr"}, 
+            {id:3, name:"pqr"}, 
+            {id:7, name: "kkk"}
+
+_________________________________________________________________
+
+Find the longest word in the sentence "React has a powerful composition model and we recommend using it"
+______________________________________________________________________________________
+
 React Questions
 
 ques 1.
