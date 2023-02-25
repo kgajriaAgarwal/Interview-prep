@@ -40,6 +40,63 @@ var arr = [{id:1,name:"abc"},
 _________________________________________________________________
 
 Find the longest word in the sentence "React has a powerful composition model and we recommend using it"
+
+______________________________________________________________________________________
+
+/* -1,10,0,-5,8,7,"hello",8,50,20,11,0,0,"world", 44, 33, 50, 10, "Bye", -1 */
+
+/* remove string
+make them sorted in ascending order
+sum of uniquie elements */
+
+```
+const arr = [-1,10,0,-5,8,7,"hello",8,50,20,11,0,0,"world", 44, 33, 50, 10, "Bye", -1]
+```
+
+### 1. remove string
+```
+function removeString(){
+  const result =[];
+  for(let i=0;i<arr.length;i++){
+    if(typeof arr[i] !== "string") result.push(arr[i]);
+  }
+  return result;
+}
+
+console.log("removeString:", removeString());
+```
+
+### 2.make them sorted in ascending order
+```
+function sortArr(){
+  var resultArr = removeString();
+  console.log("resultArr:", resultArr);
+  return  resultArr.sort(function(a, b) {
+    return a - b;
+  });
+}
+
+console.log("sortArr:", sortArr());
+```
+
+### 3.sum of uniquie elements
+```
+function sumOfUnique(){
+	var resultArr = removeString();
+  const uniqueArr = resultArr.reduce((acc, cval)=>{
+  	if(acc.indexOf(cval) == -1){
+    	acc.push(cval)
+    }
+    return acc;
+  }, [])
+  
+  const sum = uniqueArr.reduce((acc, cval) => acc += cval, 0)
+  return sum;
+}
+
+console.log("sumOfUnique:", sumOfUnique());
+```
+
 ______________________________________________________________________________________
 
 React Questions
