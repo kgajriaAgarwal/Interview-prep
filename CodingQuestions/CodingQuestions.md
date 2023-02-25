@@ -41,6 +41,27 @@ _________________________________________________________________
 
 Find the longest word in the sentence "React has a powerful composition model and we recommend using it"
 
+/* Find the longest word in the sentence "React has a powerful composition model and we recommend using it" */
+```
+const str = "React has a powerful composition model and we recommend using it";
+
+function longestString(){
+	const strArr = str.split(' ')
+  console.log("strArr:", strArr);
+  
+  let longestWord= strArr[0];
+  console.log("longestWord:", longestWord);
+	for(let i=1;i< strArr.length;i++){
+		if(strArr[i].length > longestWord.length) {
+    	longestWord = 	strArr[i];
+      }
+  }
+  return longestWord;
+    
+}
+
+console.log("longestString:", longestString());
+```
 ______________________________________________________________________________________
 
 /* -1,10,0,-5,8,7,"hello",8,50,20,11,0,0,"world", 44, 33, 50, 10, "Bye", -1 */
