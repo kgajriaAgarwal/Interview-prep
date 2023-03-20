@@ -117,7 +117,23 @@ function sumOfUnique(){
 
 console.log("sumOfUnique:", sumOfUnique());
 ```
+______________________________________________________________________________________
 
+```
+const input = [{id:1, value: 20},{id: 2, value: 25},{id:3, value: 2},{id: 1, value: 4},{id: 2, value: 6}];
+
+const output = input.reduce((acc, curr) => {
+const index = acc.findIndex(item => item.id === curr.id);
+if (index === -1) {
+acc.push(curr);
+} else {
+acc[index].value += curr.value;
+}
+return acc;
+}, []);
+
+console.log(output);
+```
 ______________________________________________________________________________________
 
 React Questions
