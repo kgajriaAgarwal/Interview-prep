@@ -121,4 +121,20 @@ console.warn(bird.data);
 - Here the **console.warn(bird.data);** is **undefined**, as we cannot access the object name dot any variable name, then this is not going to work
 ____________________________________________________________________________________________________
 
+***Guess the output for Code - 07***
+
+```
+let c = { name:"anny"};
+let d;
+d=c;
+c.name="bob";
+console.log(d.name);
+console.log(c.name);
+
+```
+***output***
+![Alt text](image-8.png)
+
+***Explanation***
+- Here the **console.log(d.name);** and **console.log(c.name);** is **"bob"**, beacuse of shallow copy whenever we are using object it will basically use the refernce type that is stored on one place and if change in one variable c then it will automatically change in variable d because both has the same memory refernce.
 
