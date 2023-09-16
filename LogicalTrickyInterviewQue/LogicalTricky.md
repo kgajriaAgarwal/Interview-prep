@@ -69,3 +69,18 @@ for(let i=0; i<3; i++){
 - **A closure is the combination ofa function and the lexical enviornmnet within which the function was declared.**
 ____________________________________________________________________________________________________
 
+***Guess the output for Code - 04***
+
+```
+console.warn("+true :", +true);
+console.warn("typeof +true :", typeof +true);
+```
+***output***
+![Alt text](image-4.png)
+
+***Explanation***
+- Here the **console.warn("+true :", +true);** is 1, beacuse if we are using + sign before any boolean value and string value, it will conver it into the number value and the value of true is 1, so it will console 1
+- Here the **console.warn("+true :", +true);** is number, beacuse the type of 1 is number, so it will console number.
+
+
+
