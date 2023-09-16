@@ -218,3 +218,50 @@ console.log("a===b:", a===b);
 
 ![Alt text](image-10.png)
 
+____________________________________________________________________________________________________
+
+***Guess the output for Code - 11***
+
+```
+let name;
+nmae = {}; //typo
+console.log("name:", name);
+```
+***output***
+![Alt text](image-13.png)
+
+***Explanation***
+- As "nmae"  is  a completely new variable, as name value is not defined , so ***console.log("name:", name);*** output is undefined.
+____________________________________________________________________________________________________
+***Guess the output for Code - 12***
+
+```
+function fruit(){
+  console.log("test!!");
+}
+
+fruit.name = "mango";
+fruit();
+```
+***output***
+![Alt text](image-14.png)
+
+***Explanation***
+- If we make any extra properties or keys to the function, it will not impact that function.
+____________________________________________________________________________________________________
+
+***Guess the output for Code - 13***
+
+```
+let number = 0;
+console.log("number++:", number++);
+console.log("++number:", ++number);
+console.log("number:", number);
+```
+
+***output***
+- number++: 0
+- ++number: 2
+- number: 2
+
+![Alt text](image-15.png)
