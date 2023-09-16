@@ -216,6 +216,5 @@ console.log("a===b:", a===b);
 ***output***
 ![Alt text](image-12.png)
 
-***Overall output***
 ![Alt text](image-10.png)
 
