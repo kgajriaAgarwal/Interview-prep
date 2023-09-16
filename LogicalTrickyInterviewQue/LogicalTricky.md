@@ -49,5 +49,23 @@ has value ***'3'*** in the global scope, that's why it will set its value 3 ther
 - **A closure is the combination ofa function and the lexical enviornmnet within which the function was declared.**
 ____________________________________________________________________________________________________
 
+***Guess the output for Code - 03***
 
+```
+for(let i=0; i<3; i++){
+  setTimeout(()=> console.log("i:", i), 1);
+}
+```
+***output***
+![Alt text](image-3.png)
+
+***Explanation***
+- Here the concept of closures is used
+- Here literal **i is declared using let, Here i doesn't has global scope, it has only block scope, It will only run in this particular block, so for every setTimeout it has a different value, ***var***  has global scope that's why it has the same value, as mentioned in abv example**
+
+***Closures***
+- Closures in action, inner function have access to outer function variables and global variables
+
+- **A closure is the combination ofa function and the lexical enviornmnet within which the function was declared.**
+____________________________________________________________________________________________________
 
