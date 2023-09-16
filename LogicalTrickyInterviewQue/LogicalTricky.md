@@ -26,3 +26,28 @@ console.log("details:", details());
 - While ***var name = "Karishma";***, will show undefined becuase of variable hoisting rule, which says, "for each variable( variable declaration ) a property is created in the varible object, which is then set to "undefined"
  
 ____________________________________________________________________________________________________
+
+***Guess the output for Code - 02***
+
+```
+for(var i=0; i<3; i++){
+  setTimeout(()=> console.log("i:", i), 1);
+}
+```
+***output***
+![Alt text](image-2.png)
+
+***Explanation***
+- Here the concept of closures is used
+- Here literal i is declared using var, Here i has global scope, As setTimeout will take some time to provide the oputput and before loop is finished of setTimeout
+- So here basically 'i' value in global scope is basically 3 , and after that setTimeout will basically do console.log("i:", i) -> 3 times , and at that time ***'i'***
+has value ***'3'*** in the global scope, that's why it will set its value 3 there, for all the cases
+
+***Closures***
+- Closures in action, inner function have access to outer function variables and global variables
+
+- **A closure is the combination ofa function and the lexical enviornmnet within which the function was declared.**
+____________________________________________________________________________________________________
+
+
+
