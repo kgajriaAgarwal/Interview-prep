@@ -137,4 +137,50 @@ console.log(c.name);
 
 ***Explanation***
 - Here the **console.log(d.name);** and **console.log(c.name);** is **"bob"**, beacuse of shallow copy whenever we are using object it will basically use the refernce type that is stored on one place and if change in one variable c then it will automatically change in variable d because both has the same memory refernce.
+____________________________________________________________________________________________________
+
+***Guess the output for Code - 08***
+
+```
+var x;
+var x = 10;
+console.log('x:', x);
+```
+***output***
+![Alt text](image-9.png)
+
+***Explanation***
+- Here the **console.log('x:', x);** is **"x: 10"**, here we have declared variable x then reclared it, we have declared the same variable 2 times, with var redeclaration is possible.
+
+let's take the same example with let keyword
+```
+let y;
+let y = 5;
+console.log('y:', y);
+```
+
+***output***
+- Here is throow - **Uncaught SyntaxError: Identifier 'y' has already been declared**
+- Redeclaration with let is not possible.
+
+```
+var x;
+let x = 10;
+console.log('x:', x);
+```
+***output***
+- Here is throow - **Uncaught SyntaxError: Identifier 'x' has already been declared**
+- Redeclaration with let is not possible.
+
+```
+let y;
+var y = 5;
+console.log('y:', y);
+```
+***output***
+- Here is throow - **Uncaught SyntaxError: Identifier 'y' has already been declared**
+- Redeclaration with let is not possible.
+____________________________________________________________________________________________________
+
+
 
