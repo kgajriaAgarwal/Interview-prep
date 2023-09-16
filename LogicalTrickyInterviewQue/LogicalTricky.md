@@ -162,7 +162,8 @@ console.log('y:', y);
 ***output***
 - Here is throow - **Uncaught SyntaxError: Identifier 'y' has already been declared**
 - Redeclaration with let is not possible.
-
+____________________________________________________________________________________________________
+***Guess the output for Code - 09***
 ```
 var x;
 let x = 10;
@@ -181,6 +182,39 @@ console.log('y:', y);
 - Here is throow - **Uncaught SyntaxError: Identifier 'y' has already been declared**
 - Redeclaration with let is not possible.
 ____________________________________________________________________________________________________
+***Guess the output for Code - 10***
+```
+let a = 3;
+let b = new Number(3);
+console.log("a==b:", a==b);
+console.log("a===b:", a===b);
 
+//output
+// a==b: true
+// a===b: false
+```
+***Explanation***
+- Here ***console.log("a==b:", a==b);*** is "true",  while ***console.log("a===b:", a===b);*** is false, becuse datatype of a and b are different although there value is the same 
+- console.log("typeof a:", typeof a); --> **typeof a: number**
+- console.log("typeof b:", typeof b); --> **typeof b: object**
 
+- whenever we are using "new" or "new keyword" with the number class, that time it will always give an object
+- when we are matching the value , there value is same , but the type is different.
+
+![Alt text](image-11.png)
+
+```
+let a = 3;
+let b = a;
+console.log("a==b:", a==b);
+console.log("a===b:", a===b);
+
+//output
+// a==b: true
+// a===b: true
+```
+![Alt text](image-12.png)
+
+**Overall output**
+![Alt text](image-10.png)
 
