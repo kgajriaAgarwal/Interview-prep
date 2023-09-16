@@ -195,8 +195,8 @@ console.log("a===b:", a===b);
 ```
 ***Explanation***
 - Here ***console.log("a==b:", a==b);*** is "true",  while ***console.log("a===b:", a===b);*** is false, becuse datatype of a and b are different although there value is the same 
-- console.log("typeof a:", typeof a); --> **typeof a: number**
-- console.log("typeof b:", typeof b); --> **typeof b: object**
+- console.log("typeof a:", typeof a); --> ***typeof a: number***
+- console.log("typeof b:", typeof b); --> ***typeof b: object***
 
 - whenever we are using "new" or "new keyword" with the number class, that time it will always give an object
 - when we are matching the value , there value is same , but the type is different.
@@ -213,8 +213,9 @@ console.log("a===b:", a===b);
 // a==b: true
 // a===b: true
 ```
+***output***
 ![Alt text](image-12.png)
 
-**Overall output**
+***Overall output***
 ![Alt text](image-10.png)
 
