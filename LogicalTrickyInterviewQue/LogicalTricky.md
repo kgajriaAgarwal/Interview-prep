@@ -98,3 +98,27 @@ console.warn(`typeof ("Karishma"):`, typeof ("Karishma"));
 - Here the **console.warn("!Karishma :", !"Karishma");** is **false**, beacuse negation of string false, and for 2nd negation of false is true so the ouput of second console will be **true**.
 
 ____________________________________________________________________________________________________
+
+***Guess the output for Code - 06***
+
+```
+let data = "size";
+const bird = {
+    size: "small"
+};
+console.warn(bird[data]);
+console.warn(bird["size"]);
+console.warn(bird.size);
+console.warn(bird.data);
+```
+***output***
+![Alt text](image-7.png)
+
+***Explanation***
+- Here the **console.warn(bird[data]);** is **small**, beacuse whenever we have any object and we want to pass any key as a variable or any dynamic key, then we can use square brackets as we have used here.
+- Here the **console.warn(bird["size"]);** is **small**, beacuse whenever we have any object and we want to pass any key as a variable or any dynamic key or any string value, then we can use square brackets as we have used here.
+- Here the **console.warn(bird.size);** is **small**
+- Here the **console.warn(bird.data);** is **undefined**, as we cannot access the object name dot any variable name, then this is not going to work
+____________________________________________________________________________________________________
+
+
