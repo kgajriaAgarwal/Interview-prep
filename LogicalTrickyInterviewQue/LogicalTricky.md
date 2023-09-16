@@ -82,5 +82,19 @@ console.warn("typeof +true :", typeof +true);
 - Here the **console.warn("+true :", +true);** is 1, beacuse if we are using + sign before any boolean value and string value, it will conver it into the number value and the value of true is 1, so it will console 1
 - Here the **console.warn("+true :", +true);** is number, beacuse the type of 1 is number, so it will console number.
 
+____________________________________________________________________________________________________
 
+***Guess the output for Code - 05***
 
+```
+console.warn("!Karishma :", !"Karishma");
+console.warn("!!Karishma :", !!"Karishma");
+console.warn(`typeof ("Karishma"):`, typeof ("Karishma"));
+```
+***output***
+![Alt text](image-6.png)
+
+***Explanation***
+- Here the **console.warn("!Karishma :", !"Karishma");** is **false**, beacuse negation of string false, and for 2nd negation of false is true so the ouput of second console will be **true**.
+
+____________________________________________________________________________________________________
