@@ -314,3 +314,31 @@ getAge();
 ***Explanation***
 - As we are using strict mode here, so here we need to put the var, let or const while declaring the variable. hoisting doesn't work here.
 ____________________________________________________________________________________________________
+***Guess the output for Code - 16***
+
+```
+const sum = eval('10*10+5');
+console.log('sum:', sum);
+```
+
+***output***
+- sum: 105
+
+```
+console.log(eval('2 + 2'));
+// Expected output: 4
+
+console.log(eval(new String('2 + 2')));
+// Expected output: 2 + 2
+
+console.log(eval('2 + 2') === eval('4'));
+// Expected output: true
+
+console.log(eval('2 + 2') === eval(new String('2 + 2')));
+// Expected output: false
+```
+
+***Explanation***
+- The eval() method evaluates or executes an argument.
+- If the argument is an expression, eval() evaluates the expression. If the argument is one or more JavaScript statements, eval() executes the statements.
+____________________________________________________________________________________________________
