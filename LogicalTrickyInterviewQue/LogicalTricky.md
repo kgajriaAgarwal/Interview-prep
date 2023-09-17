@@ -291,3 +291,26 @@ getAge(21);
 
 ***Explanation***
 - Here the o/p is object, because when we do ***console.log(args);***, then the o/p is [21], which is an array and in Js Array is an object so the o/p of ***console.log(typeof args);*** is an "object"
+____________________________________________________________________________________________________
+
+***Guess the output for Code - 15***
+
+```
+function getAge(){
+  'use strict';
+  age = 21
+  console.log("age:", age);
+}
+
+getAge();
+```
+
+***output***
+- ReferenceError: age is not defined
+
+![Alt text](image-19.png)
+![Alt text](image-20.png)
+
+***Explanation***
+- As we are using strict mode here, so here we need to put the var, let or const while declaring the variable. hoisting doesn't work here.
+____________________________________________________________________________________________________
