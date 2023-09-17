@@ -264,4 +264,30 @@ console.log("number:", number);
 - ++number: 2
 - number: 2
 
-![Alt text](image-15.png)
+![Alt text](image-16.png)
+
+***Explanation***
+- Here we have a 'number', whose value is zero
+- Here ***console.log("number++:", number++);*** the output is zero, because here first we are printing the value then incrementing it. so it print zero first then increment it to 1.
+- Here ***console.log("++number:", ++number);*** the output is 2, Here we are first incrementing the value from 1 to 2, then printing the value 2.
+- Here ***console.log("number:", number);*** the output is 2, then printing the value of the number that is 2.
+____________________________________________________________________________________________________
+
+***Guess the output for Code - 14***
+
+```
+function getAge(...args){
+  // console.log(args);
+  console.log(typeof args);
+}
+
+getAge(21);
+```
+
+***output***
+- object
+
+![Alt text](image-17.png)
+
+***Explanation***
+- Here the o/p is object, because when we do ***console.log(args);***, then the o/p is [21], which is an array and in Js Array is an object so the o/p of ***console.log(typeof args);*** is an "object"
